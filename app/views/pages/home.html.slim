@@ -1,0 +1,26 @@
+<html>
+
+h1 Home
+
+<body>
+  p
+    | This line is on the left margin.
+       This line will have one space in front of it.
+         This line will have two spaces in front of it.
+           And so on...
+
+
+  table
+    <tr><td>#{@articles[:name]}</td><td>#{@articles[:contact]}</td></tr>
+
+  p
+    / This line won't get displayed.
+      Neither does this line.
+    /! This will get displayed as html comments.
+
+
+  /[if IE]
+    p Get a better browser.
+
+</body>
+</html>

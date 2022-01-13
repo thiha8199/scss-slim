@@ -1,0 +1,15 @@
+ruby:
+  def a_unless_current
+    @page_current ? {tag: 'span'} : {tag: 'a', href: 'http://slim-lang.com/'}
+  end
+- @page_current = true
+*a_unless_current GGwp
+- @page_current = false
+*a_unless_current GGwp
+
+br
+&text name="user"
+br
+&password name="pw"
+br
+&submit
